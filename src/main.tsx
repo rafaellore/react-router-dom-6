@@ -10,6 +10,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { About } from './components/About';
 import { Home } from './components/Home';
 import { Menu } from './components/Menu';
+import { NotFound } from './components/NotFound';
 import { Post } from './components/Post';
 import { Posts } from './components/Posts';
 
@@ -31,6 +32,7 @@ ReactDOM.render(
             <Route path="/about" element={<About />} />
             <Route path="/posts" element={<Posts />} />
             <Route path="/posts/:id" element={<Post />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
       </Container>
